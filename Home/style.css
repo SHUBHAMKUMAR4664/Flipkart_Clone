@@ -1,0 +1,288 @@
+body{
+    margin: 0;
+    background-color: rgb(240, 240, 240);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.navbar{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    height: 40px;
+    width: 45%;
+    border-radius: 7px;
+    background-color: rgba(52, 113, 116, 0.103);
+}
+
+.search-icon button{
+    border: none;
+    background-color: transparent;
+    opacity: .5;
+    cursor: pointer;
+}
+.search-input input{
+    width: 500px;
+    border: none;
+    font-size: large;
+    background-color: transparent;
+}
+
+input:focus{
+    outline: none;
+}
+
+
+
+.user-icon{
+    display: flex;
+    align-items: center;
+    padding: 0px 5px;
+    height: 45px;
+    width: 90px;
+    font-size: large;
+    justify-content: space-evenly;
+}
+
+.user a{
+    text-decoration: none;
+    color: black;
+    opacity: .8;
+}
+
+.user-hover:hover {
+    background-color: rgb(0, 110, 255);
+    border-radius: 7px;
+}
+
+
+.cart-icon{
+    width: 70px;
+}
+
+.seller-icon{
+    width: 160px;
+}
+
+.more-icon{
+    display: flex;
+    width: 54px;
+    height: 42px;
+    opacity: .8;
+    border: 1px solid transparent;
+    align-items: center;
+    justify-content: center;
+}
+
+.more-icon:hover{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+/*----------------------Main--------------------------------*/
+
+main{
+    margin: 0px 16px;
+    max-width: 100%;
+}
+
+
+.fst-row{
+    background-color: white;
+    height: 100px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.list a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+.slider{
+    display: flex;
+    overflow: hidden;
+}
+
+.anim-img{
+    width: 100%;
+    animation-name: slider;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes slider{
+    0% {transform: translateX(0%);}
+    10% {transform: translateX(0%);}
+    20% {transform: translateX(-100%);}
+    30% {transform: translateX(-100%);}
+    40% {transform: translateX(-200%);}
+    50% {transform: translateX(-200%);}
+    60% {transform: translateX(-300%);}
+    70% {transform: translateX(-300%);}
+    80% {transform: translateX(-400%);}
+    90% {transform: translateX(-400%);}
+    100% {transform: translateX(0%);}
+}
+
+
+
+.thrd-row{
+    display: flex;
+    height: 350px;
+    margin: 15px 0;
+}
+
+.fst-col-thrd-row{
+    width: 100%;
+    background-color: white;
+}
+
+.scnd-col-thrd-row{
+    width: 25%;
+    /*height: 400px;*/
+    background-color: white;
+    margin-left: 10px;
+}
+
+.header-3rd-row{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+.product-3rd-row{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box-3rd-row{
+    width: 185px;
+    height: 230px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.226);
+    border-radius: 3px;
+    padding: 5px 0;
+}
+
+.product-3rd-row a{
+    text-decoration: none;
+    color: black;
+}
+
+.scnd-col-thrd-row img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*-------------------------------------Footer------------------------------------------*/
+
+
+
+.footer-fst-row{
+    margin: 0 15px;
+    background-color: rgb(245, 245, 245);
+    padding: 5px 10px;
+    opacity: .5;
+    font-size: smaller;
+}
+
+.footer-fst-row h1, h2{
+    font-size: 1rem;
+}
+
+.footer-scnd-row{
+    background-color: rgb(36, 36, 37);
+    padding: 50px 0 10px 0;
+}
+
+.fst-footer-scnd-row{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-scnd-row h5{
+    margin: 0;
+    color: #878787;
+}
+
+.list-header a, .list-header p, .office-address p{
+    text-decoration: none;
+    color: white;
+    font-size: smaller;
+}
+
+
+
+.social h5{
+    margin: 0;
+}
+
+.mail-social{
+    border-left: 1px solid #878787;
+    padding-left: 30px;
+}
+
+.social img{
+    padding-right: 15px;
+}
+
+.office-address a{
+    text-decoration: none;
+    color: rgb(0, 110, 255);
+    font-weight: lighter;
+}
+
+.footer-scnd-row ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
+
+.last-line-link a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.last-line-link a img{
+    padding-right: 2px;
+}
+
+/* -----------------------------------------------------Responsive-site------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
