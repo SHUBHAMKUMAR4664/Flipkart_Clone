@@ -128,8 +128,8 @@ main{
 .anim-img{
     width: 100%;
     animation-name: slider;
-    animation-duration: 10s;
-    animation-timing-function: linear;
+    animation-duration: 15s;
+    animation-timing-function: ease-out;
     animation-iteration-count: infinite;
 }
 
