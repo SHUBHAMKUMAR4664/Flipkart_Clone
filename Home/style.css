@@ -347,11 +347,12 @@ main{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-right: 10px;
     }
 
     .logo span{
         display: flex;
-        padding-right: 10px;
+        padding-right: 30px;
     }
 
     .user{
@@ -367,6 +368,7 @@ main{
         align-items: right;
         width: 0;
         height: 0;
+        padding-left: 45px;
     }
 
 
