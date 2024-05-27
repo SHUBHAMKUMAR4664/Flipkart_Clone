@@ -46,10 +46,6 @@ header{
     overflow: hidden;
 }
 
-.search_mobile, header br {
-    display: none;
-}
-
 .search-icon button{
     border: none;
     background-color: transparent;
@@ -114,6 +110,11 @@ input:focus{
     border-radius: 5px;
     cursor: pointer;
 }
+
+.input_mobile {
+    display: none;
+}
+
 
 
 /*----------------------Main--------------------------------*/
@@ -330,15 +331,13 @@ main{
     .navbar{
         display: flex;
         height: 50px;
+        padding-top: 10px;
     }
 
     header{
-        top: -1;
+        position: static;
     }
 
-    header .search_mobile{
-        top: 0;
-    }
 
     .header{
         background-color: white;
@@ -384,12 +383,21 @@ main{
         display: none;
     }
 
+    .input_mobile{
+        display: block;
+        background-color: white;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        padding: 5px 0;
+    }
+
     .search_mobile {
         display: flex;
         align-items: center;
         border: 1px solid transparent;
         height: 40px;
-        width: 90%;
+        width: 95%;
         border-radius: 7px;
         background-color: rgba(52, 113, 116, 0.103);
         overflow: hidden;
@@ -411,12 +419,21 @@ main{
     .fst-row {
         overflow: scroll auto;
         overflow-y: hidden;
+        padding: 0 5px;
     }
 
     .list a{
         padding-right: 15px;
     }
     
+    main{
+        width: 100vw;
+    }
+
+    .anim-img img{
+        width: 100vw;
+        height: 25vh;
+    }    
     
     .product-3rd-row{
         overflow: scroll auto;
